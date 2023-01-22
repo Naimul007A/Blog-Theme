@@ -1,0 +1,122 @@
+/*
+common css
+*/
+
+/*
+*custom css
+*/
+#header_area {
+  /* padding: 15px 0; */
+  background: rgb(73, 69, 69);
+}
+#header_area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#header_area ul li {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+#header_area ul li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 12px 10px;
+}
+#header_area ul li a:hover {
+  color: var(--color);
+}
+#header_area ul li :hover a {
+  color: var(--color);
+}
+#header_area ul li :hover ul li a {
+  color: var(--color);
+}
+
+#header_area ul ul {
+  position: absolute;
+  background-color: var(--color);
+  width: 180px;
+  left: -30px;
+  transition: all 0.8s;
+  display: none;
+  top: 50px;
+  z-index: 99999;
+}
+#header_area ul li:hover ul {
+  /* left: -30px; */
+  display: block;
+  transition: all 0.8s;
+}
+#header_area ul li:hover ul ul {
+  /* left: -9999px; */
+  display: none;
+}
+#header_area ul ul ul {
+  /* left: -999999px; */
+  display: none;
+  top: 0px;
+}
+#header_area ul li ul li:hover ul {
+  left: 182px;
+  display: block;
+}
+#header_area ul ul li {
+  margin: 0;
+  display: block;
+}
+#header_area ul ul li a:hover {
+  background-color: #1d2327;
+  color: #fff;
+}
+#header_area ul ul li :hover a {
+  background-color: #1d2327;
+  color: #fff;
+}
+#header_area ul ul li :hover ul li a {
+  background-color: none;
+  color: #fff;
+}
+
+#header_area ul ul li ul li a :hover {
+  background-color: #1d2327;
+  color: var(--color);
+}
+
+#nav li a[aria-current="page"] {
+  background-color: #1d2327;
+  color: #fff;
+}
+
+.site_logo {
+  width: 145px;
+  height: 50px;
+  margin: auto;
+}
+.site_logo img {
+  width: 100%;
+  height: 100%;
+}
+#header_area.left_menu .col-md-3 {
+  order: 2;
+}
+#header_area.left_menu .col-md-9 {
+  order: 1;
+}
+#header_area.left_menu .col-md-9 ul {
+  text-align: left;
+}
+#header_area.center_menu .col-md-3 {
+  width: 100%;
+  margin: 5px 0px;
+  text-align: center;
+}
+#header_area.center_menu .col-md-9 {
+  width: 100%;
+}
+#header_area.center_menu .col-md-9 ul {
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+/*=========
+common css
+============*/
+:root {
+  --color: #ba2e1f;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Oswald", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #ff4d44;
+}
+a:hover {
+  color: #262626;
+  border-bottom: 1px dashed #ff4d44;
+}
+li {
+  list-style: none;
+}
+/* ========== === = ==== ========
+         custom css
+============================= */
+.readmore {
+  background: var(--color);
+  color: #fff !important;
+  padding: 12px;
+  border-radius: 55px;
+}
+#body_area {
+  padding-top: 15px;
+  padding: 45px 0px;
+}
+#body_area .post_area {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#body_area .post_thum {
+  width: 100%;
+  margin-bottom: 15px;
+
+  overflow: hidden;
+}
+#body_area .post_thum img {
+  width: 100%;
+  display: block;
+  transition: all 0.5s;
+}
+#body_area .post_thum:hover img {
+  transform: scale(1.1);
+}
+#body_area .post_details {
+  width: 100%;
+}
+#body_area .post_details h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+#body_area .post_details a {
+  color: #262626;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#body_area .post_details a:hover {
+  color: rgba(175, 18, 18, 0.986);
+}
+/*==================
+*serach style
+====================*/
+#search_title span {
+  color: #ca0000;
+}
